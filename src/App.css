@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
+
+
+
+body {
+  font-family: "Barlow Semi Condensed"; 
+ 
+} 
+
+.ant-table-cell .ant-table-selection-column {
+width: 20;
+padding: 8
+}
+
+.AddNewClient {
+    height: 24px;
+        width: 231px;
+        color: #333333;
+        font-family: "Barlow Semi Condensed";
+        font-size: 14px;
+        line-height: 24px;
+
+}
+
+.submitbutton{
+   height: 30px;
+        width: 130px;
+        border-radius: 20px;
+        background-color:#0087cb;
+        font-size: 16px;
+        color: black;
+        display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.submitbutton:hover{
+ background-color:#0087cb;
+ color: white;
+}
+.emailfield {
+    box-sizing: border-box;
+        height: 30px;
+        width: 200px;
+        border: 1px solid black;
+
+}
+
+.usernamefield {
+  box-sizing: border-box;
+        height: 30px;
+        width: 200px;
+        border: 1px solid black;
+}
+h1{
+    font-family: 'Barlow Semi Condensed', "sans-serif";
+    font-size: 20px;
+    
+}
+.hptitle {
+  font-family: 'Barlow Semi Condensed', "sans-serif";
+    font-size: 100px;
+    font-weight: bold;
+}
+.subtitle {
+  font-size: 50px;
+}
+.hptext {
+  font-size: 25px;
+  color: red;
+  
+}
+.hpbutton {
+  height: 30px;
+        width: 200px;
+        border-radius: 20px;
+        background-color:#2db3f6;
+        font-size: 180px;
+        color: white;
+        display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+  
+}
+.hpbutton:hover {
+   background-color:#0087cb;
+ color: white;
+
+}
+.inputclient {
+   outline: none;
+  padding: 16px 22px;
+  border: 1px solid #dadce0;
+  font-size:18px;
+  border-radius:5px;
+   
+}
+/* .inputField:focus{
+  border: 2px black;
+  } */
