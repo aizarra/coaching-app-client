@@ -4,6 +4,7 @@ import axios from 'axios';
 import { AuthContext } from '../context/auth.context';
 
 const API_URL = 'http://localhost:5005';
+const API_URL2 = 'https://shy-jade-dalmatian-cape.cyclic.app';
 
 const EditableContext = React.createContext(null);
 const EditableRow = ({ index, ...props }) => {
@@ -101,7 +102,7 @@ const ClientsList2 = () => {
     console.log('USER: ', user);
     const storedToken = localStorage.getItem('authToken');
     axios
-      .get(`${API_URL}/api/users/${user?._id}/clients`, {
+      .get(`${API_URL2}/api/users/${user?._id}/clients`, {
         headers: { Authorization: `Bearer ${storedToken}` },
       })
       .then((response) => {
@@ -151,7 +152,7 @@ const ClientsList2 = () => {
     };
     const userId = user._id;
     axios
-      .post(`${API_URL}/api/user/addClient`, { newData, userId })
+      .post(`${API_URL2}/api/user/addClient`, { newData, userId })
       .then((response) => {
         getAllClients();
       });

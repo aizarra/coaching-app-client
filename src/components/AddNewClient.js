@@ -6,6 +6,7 @@ import { AuthContext } from '../context/auth.context';
 import { useContext } from 'react';
 
 const API_URL = 'http://localhost:5005';
+const API_URL2 = 'https://shy-jade-dalmatian-cape.cyclic.app';
 
 export function AddNewClient() {
   const [username, setUserName] = useState('');
@@ -25,7 +26,7 @@ export function AddNewClient() {
     const requestBody = { username, email, loggedIn };
 
     return axios
-      .post(`${API_URL}/api/addClient`, requestBody)
+      .post(`${API_URL2}/api/addClient`, requestBody)
       .then((response) => {
         console.log(response, 'responseresoinse');
         window.location.reload();

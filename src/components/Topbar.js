@@ -158,7 +158,7 @@ export default function TopBar({ showNav, setShowNav }) {
                 </Menu.Item>
                 <Menu.Item>
                   <Link
-                    onClick={}
+                    onClick={logOutUser}
                     className="flex hover:bg-orange-500 hover:text-white text-gray-700 rounded p-2 text-sm group transition-colors items-center">
                     <Cog8ToothIcon className="h-4 w-4 mr-2" />
                     Logout

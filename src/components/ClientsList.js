@@ -5,6 +5,7 @@ import { useContext } from 'react';
 import { Table } from 'antd';
 
 const API_URL = 'http://localhost:5005';
+const API_URL2 = 'https://shy-jade-dalmatian-cape.cyclic.app';
 
 const ClientsList = () => {
   const [clients, setClients] = useState([]);
@@ -16,7 +17,7 @@ const ClientsList = () => {
       console.log('USER: ', user);
       const storedToken = localStorage.getItem('authToken');
       axios
-        .get(`${API_URL}/api/users/${user?._id}/clients`, {
+        .get(`${API_URL2}/api/users/${user?._id}/clients`, {
           headers: { Authorization: `Bearer ${storedToken}` },
         })
         .then((response) => {
