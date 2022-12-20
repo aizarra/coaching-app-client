@@ -28,7 +28,7 @@ function LoginPage() {
     const requestBody = { email, password, usersType };
 
     axios
-      .post(`${API_URL}/auth/login`, requestBody)
+      .post(`${API_URL2}/auth/login`, requestBody)
       .then((response) => {
         console.log(response);
         if (usersType === 'trainer') {

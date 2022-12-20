@@ -26,7 +26,7 @@ export function AddNewClient() {
     const requestBody = { username, email, loggedIn };
 
     return axios
-      .post(`${API_URL}/api/addClient`, requestBody)
+      .post(`${API_URL2}/api/addClient`, requestBody)
       .then((response) => {
         console.log(response, 'responseresoinse');
         window.location.reload();

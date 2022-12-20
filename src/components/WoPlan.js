@@ -23,7 +23,7 @@ const WoPlan = () => {
     const requestBody = { email, chosenExercises };
 
     axios
-      .post(`${API_URL}/api/user/chosenExercises`, requestBody)
+      .post(`${API_URL2}/api/user/chosenExercises`, requestBody)
       .then((response) => {
         navigate('/PlanForClient');
       })
@@ -46,7 +46,7 @@ const WoPlan = () => {
 
   useEffect(() => {
     axios
-      .get(`${API_URL}/api/exercises`)
+      .get(`${API_URL2}/api/exercises`)
       .then((response) => {
         console.log(response.data);
         setExercises(response.data);
