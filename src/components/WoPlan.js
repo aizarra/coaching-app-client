@@ -6,8 +6,8 @@ import { Button, Input, Space, Table } from 'antd';
 import Highlighter from 'react-highlight-words';
 import { SearchOutlined } from '@ant-design/icons';
 
-const API_URL = 'http://localhost:5005';
-const API_URL2 = 'https://shy-jade-dalmatian-cape.cyclic.app';
+const API_URL = process.env.REACT_APP_API_URL; 
+
 
 const WoPlan = () => {
   const [exercises, setExercises] = useState([]);
@@ -23,7 +23,7 @@ const WoPlan = () => {
     const requestBody = { email, chosenExercises };
 
     axios
-      .post(`${API_URL2}/api/user/chosenExercises`, requestBody)
+      .post(`${API_URL}/api/user/chosenExercises`, requestBody)
       .then((response) => {
         navigate('/PlanForClient');
       })
@@ -46,7 +46,7 @@ const WoPlan = () => {
 
   useEffect(() => {
     axios
-      .get(`${API_URL2}/api/exercises`)
+      .get(`${API_URL}/api/exercises`)
       .then((response) => {
         console.log(response.data);
         setExercises(response.data);
