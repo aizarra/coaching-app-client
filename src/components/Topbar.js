@@ -10,11 +10,8 @@ import {
 } from '@heroicons/react/24/solid';
 import { BellIcon, CheckIcon } from '@heroicons/react/24/outline';
 import { Menu, Transition, Popover } from '@headlessui/react';
-import Link from 'next/link';
-import { AuthContext } from './../context/auth.context';
-import { useContext } from 'react';
+
 export default function TopBar({ showNav, setShowNav }) {
-  const { logOutUser } = useContext(AuthContext);
   return (
     <div
       className={`fixed w-full h-16 flex justify-between items-center transition-all duration-[400ms] ${
@@ -131,7 +128,7 @@ export default function TopBar({ showNav, setShowNav }) {
             leave="transition ease-in duration=75"
             leaveFrom="transform scale-100"
             leaveTo="transform scale-95">
-            <Menu.Items className="absolute right-0 w-56 z-50 mt-2 origin-top-right bg-white rounded shadow-sm">
+            {/* <Menu.Items className="absolute right-0 w-56 z-50 mt-2 origin-top-right bg-white rounded shadow-sm">
               <div className="p-1">
                 <Menu.Item>
                   <Link
@@ -166,7 +163,7 @@ export default function TopBar({ showNav, setShowNav }) {
                   </Link>
                 </Menu.Item>
               </div>
-            </Menu.Items>
+            </Menu.Items> */}
           </Transition>
         </Menu>
       </div>
