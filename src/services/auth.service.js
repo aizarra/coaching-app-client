@@ -4,7 +4,6 @@ class AuthService {
   constructor() {
     this.api = axios.create({
       baseURL:
-        "https://shy-jade-dalmatian-cape.cyclic.app" ||
         'http://localhost:5005',
     });
 

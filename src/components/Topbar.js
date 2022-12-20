@@ -6,6 +6,7 @@ import {
   ChevronDownIcon,
   CreditCardIcon,
   Cog8ToothIcon,
+  ArrowLeftOnRectangleIcon,
 } from '@heroicons/react/24/solid';
 import { BellIcon, CheckIcon } from '@heroicons/react/24/outline';
 import { Menu, Transition, Popover } from '@headlessui/react';
@@ -158,9 +159,9 @@ export default function TopBar({ showNav, setShowNav }) {
                 </Menu.Item>
                 <Menu.Item>
                   <Link
-                    onClick={logOutUser}
+                    href="#"
                     className="flex hover:bg-orange-500 hover:text-white text-gray-700 rounded p-2 text-sm group transition-colors items-center">
-                    <Cog8ToothIcon className="h-4 w-4 mr-2" />
+                    <ArrowLeftOnRectangleIcon className="h-4 w-4 mr-2" />
                     Logout
                   </Link>
                 </Menu.Item>

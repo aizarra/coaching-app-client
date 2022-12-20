@@ -18,7 +18,7 @@ const Sidebar = forwardRef(({ showNav }, ref) => {
           />
         </picture>
       </div>
-      <UserProfile />
+      {/* <UserProfile /> */}
     </div>
   );
 });
